@@ -31,7 +31,7 @@
     home = "/home/${username}";
     extraGroups = [ "wheel" ];
     openssh.authorizedKeys.keys = [
-      (builtins.readFile ~/.ssh/id_rsa.pub)
+      (builtins.readFile ~/.ssh/az_id_rsa.pub)
     ];
     shell = pkgs.zsh;
   };
